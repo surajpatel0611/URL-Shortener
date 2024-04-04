@@ -39,11 +39,11 @@ class Form extends React.Component {
         //If the user has input a prefered alias then we use it, if not, we generate one
         //Be sure to change minilinkit.com to your domain
         var generatedKey = nanoid(5);
-        var generatedURL = "minilinkit.com/" + generatedKey
+        var generatedURL = "suraj-url-shortener-e3cfedf46733.herokuapp.com/" + generatedKey
 
         if (this.state.preferedAlias !== '') {
             generatedKey = this.state.preferedAlias
-            generatedURL = "minilinkit.com/" + this.state.preferedAlias
+            generatedURL = "suraj-url-shortener-e3cfedf46733.herokuapp.com/" + this.state.preferedAlias
         }
 
         const db = getDatabase();
@@ -176,7 +176,7 @@ class Form extends React.Component {
                         <label htmlFor="basic-url">Your Mini URL</label>
                         <div className="input-group mb-3">
                             <div className="input-group-prepend">
-                                <span className="input-group-text">minilinkit.com/</span>
+                                <span className="input-group-text">suraj-url-shortener-e3cfedf46733.herokuapp.com//</span>
                             </div>
                             <input
                                 id="preferedAlias"
